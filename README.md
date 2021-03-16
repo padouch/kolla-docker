@@ -1,6 +1,3 @@
-## Notix
-docker run -d --name notix-openstack-kolla -ti -v /Users/padouch/notix/git/notix-openstack-inv/kolla:/etc/kolla -v /Users/padouch/notix/git/notix-openstack-inv/inventory:/root/inventory -v /Users/padouch/notix/git/notix-openstack-inv/ssh:/root/.ssh  padouch-kolla-ansible:10.1.0 bash
-
 ## Oxus
  docker run -d --name oxus-openstack-kolla-ussuri -ti -v /Users/padouch/stratox/git/oxus-openstack-inv/kolla:/etc/kolla -v /Users/padouch/stratox/git/oxus-openstack-inv/inventory:/root/inventory -v /Users/padouch/stratox/git/oxus-openstack-inv/ssh:/root/.ssh  padouch-kolla-ansible:10.1.0 bash
 
