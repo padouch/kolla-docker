@@ -1,5 +1,12 @@
+## Build docker container
+``` bash
+docker build . --tag padouch-kolla-ansible:10.1.0
+```
+
 ## Oxus
+``` bash
  docker run -d --name oxus-openstack-kolla-ussuri -ti -v /Users/padouch/stratox/git/oxus-openstack-inv/kolla:/etc/kolla -v /Users/padouch/stratox/git/oxus-openstack-inv/inventory:/root/inventory -v /Users/padouch/stratox/git/oxus-openstack-inv/ssh:/root/.ssh  padouch-kolla-ansible:10.1.0 bash
+```
 
 ## RUN kolla
 ### Prereq
@@ -8,8 +15,9 @@
 3. kolla-ansible -i ./inventory/multinode -e 'ansible_become=true' -e 'ansible_become_method=sudo' -e 'ansible_become_user=root' pull
 
 ### Install 
+```bash
 kolla-ansible -i ./inventory/multinode -e 'ansible_become=true' -e 'ansible_become_method=sudo' -e 'ansible_become_user=root' deploy
-
+```
 ## Errors
 ### Python3 vs Python2 issue
 ```
