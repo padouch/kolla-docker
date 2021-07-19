@@ -1,11 +1,11 @@
 ## Build docker container
 ``` bash
-docker build . --tag padouch-kolla-ansible:10.1.0
+docker build . --tag cokoli/kolla-ansible:12.0.0
 ```
 
 ## Oxus
 ``` bash
- docker run -d --name oxus-openstack-kolla-ussuri -ti -v /Users/padouch/stratox/git/oxus-openstack-inv/kolla:/etc/kolla -v /Users/padouch/stratox/git/oxus-openstack-inv/inventory:/root/inventory -v /Users/padouch/stratox/git/oxus-openstack-inv/ssh:/root/.ssh  padouch-kolla-ansible:10.1.0 bash
+ docker run -d --name codenow-openstack-kolla-wallaby -ti -v /Users/padouch/stratox/git/codenow-openstack-inv/kolla:/etc/kolla -v /Users/padouch/stratox/git/codenow-openstack-inv/inventory:/root/inventory -v /Users/padouch/stratox/git/codenow-openstack-inv/ssh:/root/.ssh  cokoli/kolla-ansible:12.0.0 bash
 ```
 
 ## RUN kolla
